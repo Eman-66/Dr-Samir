@@ -1,0 +1,99 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.benefits-list {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.benefits-list li {
+  padding: 12px 0;
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.reason-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.reason-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin: 0 auto 20px;
+  font-size: 1.8rem;
+}
+
+.reason-card h4 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: var(--gray);
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 40px;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text h3 {
+    font-size: 1.75rem;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+.App {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--white);
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+section.light-bg {
+  background: var(--light);
+}
+
+section.primary-bg {
+  background: var(--primary);
+  color: var(--white);
+}
+
+section.secondary-bg {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 40px 0;
+  }
+}
