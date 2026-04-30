@@ -66,7 +66,7 @@ export default function Booking() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+20 100 000 0000"
+                  placeholder="01050727008"
                   required
                 />
               </div>
@@ -134,14 +134,14 @@ export default function Booking() {
               <h3>Need Immediate Assistance?</h3>
               <p>Contact us directly via WhatsApp or phone for instant booking and support.</p>
               
-              <a href="https://wa.me/201000000000?text=Hi%20Phynx%20Clinic!%20I%20would%20like%20to%20book%20an%20appointment" 
+              <a href="https://wa.me/201050727008?text=Hi%20Phynx%20Clinic!%20I%20would%20like%20to%20book%20an%20appointment" 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  className="btn btn-secondary btn-block">
                 <FaWhatsapp /> Chat on WhatsApp
               </a>
 
-              <a href="tel:+201000000000" className="btn btn-outline btn-block">
+              <a href="tel:01050727008" className="btn btn-outline btn-block">
                 Call Now
               </a>
             </div>

@@ -1,9 +1,8 @@
-import { FiMessageCircle } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import './FloatingWhatsApp.css'
 
 export default function FloatingWhatsApp() {
-  const whatsappLink = 'https://wa.me/201000000000?text=Hello%20Phynx%20Clinic!%20I%20would%20like%20to%20book%20an%20appointment.'
+  const whatsappLink = 'https://wa.me/201050727008?text=Hello%20Phynx%20Clinic!%20I%20would%20like%20to%20book%20an%20appointment.'
 
   return (
     <div className="floating-whatsapp">

@@ -30,6 +30,16 @@
   font-size: 2rem;
 }
 
+.footer-logo-image {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
 .footer-logo h3 {
   color: var(--accent);
   margin: 0;

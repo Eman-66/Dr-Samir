@@ -20,7 +20,7 @@ export default function Contact() {
               </div>
               <h3>Phone</h3>
               <p>Call us for immediate assistance</p>
-              <a href="tel:+201000000000" className="contact-link">+20 100 0000 000</a>
+              <a href="tel:01050727008" className="contact-link">01050727008</a>
             </div>
 
             <div className="contact-card">
@@ -29,7 +29,7 @@ export default function Contact() {
               </div>
               <h3>WhatsApp</h3>
               <p>Message us anytime</p>
-              <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a href="https://wa.me/201050727008" target="_blank" rel="noopener noreferrer" className="contact-link">
                 Start Chat
               </a>
             </div>
@@ -74,7 +74,7 @@ export default function Contact() {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} />
             </a>
-            <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/201050727008" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={24} />
             </a>
           </div>

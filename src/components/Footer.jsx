@@ -1,5 +1,6 @@
-import { FiPhone, FiMail, FiMapPin, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi'
+import { FiPhone, FiMail, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
+import logo from '../assets/phynx-logo.jpg'
 import './Footer.css'
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <span className="logo-icon">⚕️</span>
+              <img src={logo} alt="Phynx Clinic logo" className="footer-logo-image" />
               <h3>Phynx Clinic</h3>
             </div>
             <p>Premium physiotherapy and rehabilitation services. Your recovery is our mission.</p>
@@ -52,7 +53,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <div className="contact-item">
               <FiPhone size={18} />
-              <a href="tel:+201000000000">+20 100 0000 000</a>
+              <a href="tel:01050727008">01050727008</a>
             </div>
             <div className="contact-item">
               <FiMail size={18} />
@@ -60,7 +61,7 @@ export default function Footer() {
             </div>
             <div className="contact-item">
               <FaWhatsapp size={18} />
-              <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a href="https://wa.me/201050727008" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
           </div>
         </div>

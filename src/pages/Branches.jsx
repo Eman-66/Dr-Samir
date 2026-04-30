@@ -7,21 +7,21 @@ export default function Branches() {
     {
       name: 'Shobra Branch',
       address: '123 El-Nile Street, Shobra, Cairo',
-      phone: '+20 100 123 4567',
+      phone: '01050727008',
       hours: 'Sat - Thu: 10 AM - 8 PM',
       mapLink: 'https://maps.google.com'
     },
     {
       name: 'Maadi Branch',
       address: '456 Road 9, Maadi, Cairo',
-      phone: '+20 100 123 4568',
+      phone: '01050727008',
       hours: 'Sat - Thu: 10 AM - 8 PM',
       mapLink: 'https://maps.google.com'
     },
     {
       name: 'Sheikh Zayed Branch',
       address: '789 Al-Gouna, Sheikh Zayed, Giza',
-      phone: '+20 100 123 4569',
+      phone: '01050727008',
       hours: 'Sat - Thu: 10 AM - 8 PM',
       mapLink: 'https://maps.google.com'
     }
@@ -67,7 +67,7 @@ export default function Branches() {
                 <a href={branch.mapLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
                   View Map
                 </a>
-                <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-sm">
+                <a href="https://wa.me/201050727008" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-sm">
                   <FaWhatsapp /> WhatsApp
                 </a>
               </div>

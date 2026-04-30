@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { FiMenu, FiX, FiPhone, FiMapPin } from 'react-icons/fi'
+import { FiMenu, FiX, FiPhone } from 'react-icons/fi'
+import logo from '../assets/phynx-logo.jpg'
 import './Navbar.css'
 
 export default function Navbar({ scrolled }) {
@@ -17,7 +18,7 @@ export default function Navbar({ scrolled }) {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <span className="logo-icon">⚕️</span>
+          <img src={logo} alt="Phynx Clinic logo" className="logo-image" />
           <span className="logo-text">Phynx</span>
         </div>
 
@@ -33,9 +34,9 @@ export default function Navbar({ scrolled }) {
         </div>
 
         <div className="navbar-cta">
-          <a href="tel:+201000000000" className="contact-info">
+          <a href="tel:01050727008" className="contact-info">
             <FiPhone size={18} />
-            <span>+20 100 0000 000</span>
+            <span>01050727008</span>
           </a>
           <button onClick={() => scrollToSection('booking')} className="btn btn-primary btn-sm">
             Book
@@ -45,6 +46,7 @@ export default function Navbar({ scrolled }) {
         <button
           className={`mobile-toggle ${mobileOpen ? 'active' : ''}`}
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
           {mobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>

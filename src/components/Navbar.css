@@ -43,6 +43,15 @@
   font-size: 2rem;
 }
 
+.logo-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
 .logo-text {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
@@ -171,6 +180,11 @@
 
   .logo-icon {
     font-size: 1.75rem;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
   }
 
   .navbar-cta .contact-info {
