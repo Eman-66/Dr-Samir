@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -33,6 +34,20 @@ body {
   overflow-x: hidden;
 }
 
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -40,19 +55,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.65rem, 4.5vw, 2.5rem);
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
 }
 
 p {
@@ -79,12 +94,13 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(16px, 4vw, 24px);
+  width: 100%;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: clamp(36px, 6vw, 60px);
 }
 
 .section-title h2 {
@@ -105,12 +121,12 @@ button {
 .section-title p {
   color: var(--gray);
   margin-top: 12px;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
 /* Buttons */
 .btn {
-  padding: 14px 32px;
+  padding: 14px clamp(22px, 4vw, 32px);
   border-radius: var(--border-radius);
   font-size: 1rem;
   font-weight: 600;
@@ -173,15 +189,15 @@ button {
 }
 
 .grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
 .grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
 
 /* Responsive */
@@ -208,17 +224,13 @@ button {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
   .btn {
-    padding: 12px 24px;
+    padding: 12px 18px;
     font-size: 0.95rem;
+  }
+
+  .container {
+    padding: 0 14px;
   }
 }
 

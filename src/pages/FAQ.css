@@ -19,11 +19,11 @@
 
 .faq-question {
   width: 100%;
-  padding: 25px;
+  padding: clamp(18px, 3vw, 25px);
   text-align: left;
   background: var(--white);
   color: var(--dark);
-  font-size: 1.1rem;
+  font-size: clamp(0.98rem, 2vw, 1.1rem);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -59,18 +59,17 @@
 }
 
 .faq-answer p {
-  padding: 0 25px 25px;
+  padding: 0 clamp(18px, 3vw, 25px) clamp(18px, 3vw, 25px);
   color: var(--gray);
   line-height: 1.8;
 }
 
 @media (max-width: 768px) {
   .faq-question {
-    padding: 20px;
     font-size: 1rem;
   }
 
   .faq-answer p {
-    padding: 0 20px 20px;
+    padding-bottom: 20px;
   }
 }

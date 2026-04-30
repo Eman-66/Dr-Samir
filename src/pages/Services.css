@@ -4,13 +4,13 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(20px, 3vw, 30px);
 }
 
 .service-card {
   background: var(--light);
-  padding: 40px 30px;
+  padding: clamp(26px, 4vw, 40px) clamp(20px, 3vw, 30px);
   border-radius: var(--border-radius);
   text-align: center;
   transition: var(--transition);
@@ -50,8 +50,8 @@
 }
 
 .service-icon {
-  width: 80px;
-  height: 80px;
+  width: clamp(64px, 12vw, 80px);
+  height: clamp(64px, 12vw, 80px);
   border-radius: 12px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   display: flex;
@@ -98,6 +98,6 @@
   }
 
   .service-card {
-    padding: 30px;
+    padding: 28px 20px;
   }
 }

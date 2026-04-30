@@ -1,13 +1,13 @@
 .booking-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(30px, 5vw, 60px);
   align-items: start;
 }
 
 .booking-form-wrapper {
   background: var(--white);
-  padding: 40px;
+  padding: clamp(24px, 4vw, 40px);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
 }
@@ -39,6 +39,7 @@
   font-family: 'Inter', sans-serif;
   transition: var(--transition);
   background: var(--white);
+  width: 100%;
 }
 
 .form-group input:focus,
@@ -54,7 +55,7 @@
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -75,7 +76,7 @@
 
 .info-card {
   background: var(--white);
-  padding: 30px;
+  padding: clamp(22px, 4vw, 30px);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
 }
@@ -103,6 +104,7 @@
   padding: 12px 0;
   color: var(--dark);
   font-weight: 500;
+  min-width: 0;
 }
 
 .step-number {
@@ -136,10 +138,10 @@
   }
 
   .booking-form-wrapper {
-    padding: 30px 20px;
+    padding: 24px 18px;
   }
 
   .info-card {
-    padding: 25px 20px;
+    padding: 24px 18px;
   }
 }

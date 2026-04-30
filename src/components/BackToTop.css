@@ -30,9 +30,16 @@
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: 100px;
-    left: 20px;
+    bottom: calc(max(18px, env(safe-area-inset-bottom)) + 72px);
+    left: max(16px, env(safe-area-inset-left));
     width: 45px;
     height: 45px;
+  }
+}
+
+@media (max-width: 360px) {
+  .back-to-top {
+    width: 42px;
+    height: 42px;
   }
 }

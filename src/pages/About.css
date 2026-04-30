@@ -1,14 +1,14 @@
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(34px, 5vw, 60px);
   align-items: center;
 }
 
 .about-text h3 {
   color: var(--primary);
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: clamp(1.55rem, 3vw, 2rem);
 }
 
 .about-text p {
@@ -31,13 +31,13 @@
 
 .reasons-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 25px);
 }
 
 .reason-card {
   background: var(--white);
-  padding: 30px;
+  padding: clamp(24px, 3vw, 30px);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
@@ -50,8 +50,8 @@
 }
 
 .reason-icon {
-  width: 70px;
-  height: 70px;
+  width: clamp(58px, 10vw, 70px);
+  height: clamp(58px, 10vw, 70px);
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   display: flex;
