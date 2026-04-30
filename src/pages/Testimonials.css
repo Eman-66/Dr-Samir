@@ -80,10 +80,22 @@
 
 @media (max-width: 768px) {
   .testimonials-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    gap: 16px;
+    margin: 0 -14px;
+    padding: 4px 14px 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .testimonials-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .testimonial-card {
+    flex: 0 0 min(84vw, 340px);
     padding: 24px 20px;
+    scroll-snap-align: center;
   }
 }

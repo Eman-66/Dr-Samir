@@ -93,7 +93,22 @@
 
 @media (max-width: 768px) {
   .branches-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    gap: 16px;
+    margin: 0 -14px;
+    padding: 4px 14px 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .branches-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .branch-card {
+    flex: 0 0 min(86vw, 360px);
+    scroll-snap-align: center;
   }
 
   .branch-actions {

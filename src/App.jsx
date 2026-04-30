@@ -14,6 +14,7 @@ import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import BackToTop from './components/BackToTop'
+import MobileActionBar from './components/MobileActionBar'
 import './App.css'
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Footer />
       <FloatingWhatsApp />
       <BackToTop />
+      <MobileActionBar />
     </div>
   )
 }

@@ -131,11 +131,13 @@
   .nav-menu {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--white);
+    left: 14px;
+    right: 14px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
     flex-direction: column;
-    gap: 0;
+    gap: 8px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -145,14 +147,20 @@
 
   .nav-menu.active {
     max-height: 500px;
-    padding: 20px;
+    padding: 12px;
   }
 
   .nav-link {
     width: 100%;
-    text-align: left;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--gray-light);
+    text-align: center;
+    padding: 13px 14px;
+    border-radius: 12px;
+    border-bottom: 0;
+    background: var(--light);
+  }
+
+  .nav-link:hover {
+    background: rgba(45, 90, 109, 0.1);
   }
 
   .nav-link::after {

@@ -24,6 +24,10 @@ section.secondary-bg {
 }
 
 @media (max-width: 768px) {
+  .App {
+    padding-bottom: 84px;
+  }
+
   section {
     padding: 60px 0;
   }

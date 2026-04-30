@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: calc(max(18px, env(safe-area-inset-bottom)) + 72px);
+    bottom: calc(max(12px, env(safe-area-inset-bottom)) + 82px);
     left: max(16px, env(safe-area-inset-left));
     width: 45px;
     height: 45px;
